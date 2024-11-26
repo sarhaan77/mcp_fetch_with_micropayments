@@ -6,7 +6,7 @@ You can read more about it here: https://x.com/sarhaan77/status/1861266093064454
 
 This was an evening hack and works like any other MCP server, but it has a few extra features to support websites that want to charge bots money to access their content.
 
-### Available Tools
+## Available Tools
 
 - `fetch` - Fetches a URL from the internet and extracts its contents as markdown.
 - `access` - Transfers a given amount of ETH to a recipient wallet address as specified in the /llms.txt of the website the user is trying to access.
@@ -18,8 +18,6 @@ This was an evening hack and works like any other MCP server, but it has a few e
 
 When using [`uv`](https://docs.astral.sh/uv/) no specific installation is needed. We will
 use [`uvx`](https://docs.astral.sh/uv/guides/tools/) to directly run _mcp-server-fetch_.
-
-## Configuration
 
 ### Configure for Claude.app
 
@@ -46,7 +44,7 @@ Add to your Claude settings:
 
 </details>
 
-### Backend Infra and Website Configuration
+## Backend Infra and Website Configuration
 
 ### Proxy Server
 
