@@ -92,11 +92,11 @@ if __name__ == "__main__":
 ```
 
 It is deployed as a digital ocean droplet with a static IP address and whitelisted by the website.
-This is a POC so I did not add if the payment was made on chain or not but it is trivial to add.
+This is a POC so I did not bother adding checks for if the correct payment was made on chain, but it is trivial to add.
 
 ### Cloudflare setup
 
-1. Ideally, you want to be on the pro plan. Irrespective, you can enable the bot protection feature, Block AI Bots, etc. BUT do not enable Bot Fight Mode as it block access to `/llms.txt` and cannot be bypassed via custom rules. You can enable Super Bot Fight Mode if you are on the pro plan.
+1. Ideally, you want to be on the pro plan. You can enable the bot protection feature, Block AI Bots, etc. BUT do not enable Bot Fight Mode as it block access to `/llms.txt` and cannot be bypassed via custom rules. You can enable Super Bot Fight Mode if you are on the pro plan.
 2. Security/waf/custom rule: Add a rule to skip all rate limit/user agent/bot protection features if the URI Path is equal to `/llms.txt`.
 3. Security/waf/custom rule: Add a rule to skip bot protection features if the IP Source Address is equal to the IP address of the proxy server.
 
